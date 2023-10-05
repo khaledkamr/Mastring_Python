@@ -1,5 +1,6 @@
-#all about strings and formating
-
+#----------------------------------
+#All about strings and formating
+#----------------------------------
 #Esape sequences characters
 #\b -> back space
 #\ -> escape new line  + "\"
@@ -11,13 +12,17 @@
 #\t -> horizontal tap
 #\xhh -> character hex value
 
-string1 = "what's up danger"
-string2 = """what's
+print("\x4F\x73") # Character Hex Value
+
+string1 = 'what\'s up danger' #escape single qoute
+string2 = "what's up danger"
+string3 = """what's
  up
 danger""" 
 
 print(string1)
 print(string2)
+print(string3)
 
 #indexing (access single item)
 string = "theweeknd"
