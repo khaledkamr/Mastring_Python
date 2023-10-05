@@ -26,6 +26,30 @@ print(string1)
 print(string2)
 print(string3)
 
+# -------------------
+# -- Concatenation --
+# -------------------
+
+msg = "I Love"
+lang = "Python"
+print(msg + " " + lang)
+
+full = msg + " " + lang
+print(full)
+
+a = "First \
+Second \
+Third" # \ -> escape new line
+
+b = "A \
+B \
+C"
+
+print(a + "\n" + b)
+
+print("Hello " + 1)  # Error; only concatenate strings
+
+
 #indexing (access single item)
 string = "theweeknd"
 print(string[1])  #index -> h
