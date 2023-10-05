@@ -73,7 +73,10 @@ print(string[:3])    #print from index 0 -> the
 print(string[3:])    #print to the end -> weeknd
 print(string[0:9:2]) #teekd
 
-#methods
+
+# ---------------------
+# -- Strings Methods --
+# ---------------------
 
 # strip() rstrip() lstrip()
 
