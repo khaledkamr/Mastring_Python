@@ -255,6 +255,7 @@ u = "AaaaaBbbbbb"
 z = "AaaaaBbbbbb111"
 print(u.isalnum())
 print(z.isalnum())
+
 # replace(Old Value, New Value, Count)
 
 a = "Hello One Two Three One One"
@@ -270,7 +271,10 @@ print(" ".join(myList))
 print(", ".join(myList))
 print(type(", ".join(myList)))
 
+#---------------------------------------
 #string formating (old way)
+#---------------------------------------
+
 name = "khaled"
 age = 20
 gpa = 3.7
@@ -282,7 +286,10 @@ print("my name is %s, my age is %d and my GPA is %.1f" % (name, age, gpa))
 # %d -> number
 # %f -> float
 
+#---------------------------------------
 #string foramting (new way)
+#---------------------------------------
+
 print("my name is {}, my age is {} and my GPA is {}" .format(name, age, gpa))
 print("my name is {:s}, my age is {:d} and my GPA is {:f}" .format(name, age, gpa))
 
@@ -305,5 +312,8 @@ x, y, z = 10, 20, 30
 print("numbers are : {} {} {}".format(x, y, z))
 print("numbers are : {1:d} {2:f} {0:.2f}".format(x, y, z))
 
+#---------------------------------------
 #format in version 3.6+
+#---------------------------------------
+
 print(f"my name is {name} and my age is {age}")
