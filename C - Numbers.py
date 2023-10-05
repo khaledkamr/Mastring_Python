@@ -1,5 +1,6 @@
-#all about numbers
-
+# -------------
+# -- Numbers --
+# -------------
 #intger
 
 print(type(0))
@@ -38,8 +39,9 @@ print(int(c.real))
 print(float(c.imag))
 
 
-#arithmetic operators
-
+# --------------------------
+# -- Arithmetic Operators --
+# --------------------------
 #addition (+)
 #subtraction (-)
 #multiplication (*)
