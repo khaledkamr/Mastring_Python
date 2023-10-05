@@ -14,6 +14,8 @@
 
 print("\x4F\x73") # Character Hex Value
 
+#You can write the string value between single qoutes or double 
+# or even triple if the string includes new lines
 string1 = 'what\'s up danger' #escape single qoute
 string2 = "what's up danger"
 string3 = """what's
