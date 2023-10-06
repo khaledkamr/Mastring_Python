@@ -10,7 +10,7 @@
 
 # Not Ordered And Not Indexed
 
-mySetOne = {"Osama", "Ahmed", 100}
+mySetOne = {"Khaled", "Ahmed", 100}
 print(mySetOne)
 # print(mySetOne[0]) #error
 
@@ -22,13 +22,13 @@ mySetTwo = {1, 2, 3, 4, 5, 6}
 # Has Only Immutable Data Types
 
 # mySetThree = {"Osama", 100, 100.5, True, [1, 2, 3]} # unhashable type: 'list'
-mySetThree = {"Osama", 100, 100.5, True, (1, 2, 3)}
+mySetThree = {"Khaled", 100, 100.5, True, (1, 2, 3)}
 
 print(mySetThree)
 
 # Items Is Unique
 
-mySetFour = {1, 2, "Osama", "One", "Osama", 1}
+mySetFour = {1, 2, "Khaled", "One", "Khaled", 1}
 print(mySetFour)
 
 # clear()
@@ -97,7 +97,7 @@ print(j)
 # difference()
 
 a = {1, 2, 3, 4}
-b = {1, 2, 3, "Osama", "Ahmed"}
+b = {1, 2, 3, "Khaled", "Ahmed"}
 print(a)
 print(a.difference(b))  # a - b
 print(a)
@@ -107,7 +107,7 @@ print("=" * 40)  # Separator
 # difference_update()
 
 c = {1, 2, 3, 4}
-d = {1, 2, "Osama", "Ahmed"}
+d = {1, 2, "Khaled", "Ahmed"}
 print(c)
 c.difference_update(d)  # c - d
 print(c)
@@ -116,8 +116,8 @@ print("=" * 40)  # Separator
 
 # intersection()
 
-e = {1, 2, 3, 4, "X", "Osama"}
-f = {"Osama", "X", 2}
+e = {1, 2, 3, 4, "X", "Khaled"}
+f = {"Khaled", "X", 2}
 print(e)
 print(e.intersection(f))  # e & f
 print(e)
@@ -126,8 +126,8 @@ print("=" * 40)  # Separator
 
 # intersection_update()
 
-g = {1, 2, 3, 4, "X", "Osama"}
-h = {"Osama", "X", 2}
+g = {1, 2, 3, 4, "X", "Khaled"}
+h = {"Khaled", "X", 2}
 print(g)
 g.intersection_update(h)  # g & h
 print(g)
@@ -137,7 +137,7 @@ print("=" * 40)  # Separator
 # symmetric_difference()
 
 i = {1, 2, 3, 4, 5, "X"}
-j = {"Osama", "Zero", 1, 2, 4, "X"}
+j = {"Khaled", "Zero", 1, 2, 4, "X"}
 print(i)
 print(i.symmetric_difference(j))  # i ^ j
 print(i)
@@ -147,7 +147,7 @@ print("=" * 40)  # Separator
 # symmetric_difference_update()
 
 k = {1, 2, 3, 4, 5, "X"}
-l = {"Osama", "Zero", 1, 2, 4, "X"}
+l = {"Khaled", "Zero", 1, 2, 4, "X"}
 print(k)
 k.symmetric_difference_update(l)  # k ^ l
 print(k)

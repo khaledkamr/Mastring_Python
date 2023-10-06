@@ -12,8 +12,8 @@
 
 # Tuple Syntax & Type Test
 
-TupleOne = ("Osama", "Ahmed")
-TupleTwo = "Osama", "Ahmed"
+TupleOne = ("Khaled", "Ahmed")
+TupleTwo = "Khaled", "Ahmed"
 
 print(TupleOne)
 print(TupleTwo)
@@ -36,14 +36,14 @@ TupleFour = (1, 2, 3, 4, 5)
 
 # Tuple Data
 
-TupleFive = ("Osama", "Osama", 1, 2, 3, 100.5, True)
+TupleFive = ("Khaled", "Khaled", 1, 2, 3, 100.5, True)
 print(TupleFive[1])
 print(TupleFive[-1])
 
 # Tuple With One Element
 
-myTuple1 = ("Osama",)
-myTuple2 = "Osama",
+myTuple1 = ("Khaled",)
+myTuple2 = "Khaled",
 
 print(myTuple1)
 print(myTuple2)
@@ -67,7 +67,7 @@ print(d)
 
 # Tuple, List, String Repeat (*)
 
-myString = "Osama"
+myString = "Khaled"
 myList = [1, 2]
 myTuple = ("A", "B")
 

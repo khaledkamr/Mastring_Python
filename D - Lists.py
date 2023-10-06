@@ -29,7 +29,7 @@ print(myList)
 
 # append()
 
-myFriends = ["Osama", "Ahmed", "Sayed"]
+myFriends = ["Khaled", "Ahmed", "Sayed"]
 myOldFriends = ["Haytham", "Samah", "Ali"]
 
 myFriends.append("Alaa")
@@ -56,8 +56,8 @@ print(a)
 
 # remove()
 
-x = [1, 2, 3, 4, 5, "Osama", True, "Osama", "Osama"]
-x.remove("Osama")
+x = [1, 2, 3, 4, 5, "Khaled", True, "Khaled", "Khaled"]
+x.remove("Khaled")
 print(x)
 
 # sort()
@@ -72,7 +72,7 @@ print(y)
 
 # reverse()
 
-z = [10, 1, 9, 80, 100, "Osama", 100]
+z = [10, 1, 9, 80, 100, "Khaled", 100]
 z.reverse()
 print(z)
 
@@ -102,7 +102,7 @@ print(d.count(1))
 
 # index()
 
-e = ["Osama", "Ahmed", "Sayed", "Ramy", "Ahmed", "Ramy"]
+e = ["Khaled", "Ahmed", "Sayed", "Ramy", "Ahmed", "Ramy"]
 print(e.index("Ramy"))
 
 # insert()
