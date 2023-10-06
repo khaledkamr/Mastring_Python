@@ -1,8 +1,9 @@
-#all about sets and its methods
-
+# -----------------------------
+# -- Set --
+# ---------
 # [1] Set Items Are Enclosed in Curly Braces
 # [2] Set Items Are Not Ordered And Not Indexed
-# [3] Set Indexing and Slicing Cant Be Done
+# [3] Set Indexing and Slicing Can't Be Done
 # [4] Set Has Only Immutable Data Types (Numbers, Strings, Tuples) List and Dict Are Not
 # [5] Set Items Is Unique
 # -----------------------------
@@ -13,10 +14,10 @@ mySetOne = {"Osama", "Ahmed", 100}
 print(mySetOne)
 # print(mySetOne[0]) #error
 
-# Slicing Cant Be Done
+# Slicing Can't Be Done
 
 mySetTwo = {1, 2, 3, 4, 5, 6}
-# print(mySetTwo[0:3])
+# print(mySetTwo[0:3]) #error
 
 # Has Only Immutable Data Types
 
