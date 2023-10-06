@@ -15,4 +15,4 @@ fName = fName.strip().capitalize()
 mName = mName.strip().capitalize()
 lName = lName.strip().capitalize()
 
-print(f"Hello {fName} {mName:.1s} {lName} Happy To See You.")
+print(f"Hello {fName} {mName:.1s}. {lName} Happy To See You.")
