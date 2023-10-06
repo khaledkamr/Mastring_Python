@@ -1,5 +1,6 @@
-#all about tuples and its methods
-
+# -----------------------------
+# -- Tuple --
+# -----------
 # [1] Tuple Items Are Enclosed in Parentheses
 # [2] You Can Remove The Parentheses If You Want
 # [3] Tuple Are Ordered, To Use Index To Access Item
@@ -11,33 +12,33 @@
 
 # Tuple Syntax & Type Test
 
-myAwesomeTupleOne = ("Osama", "Ahmed")
-myAwesomeTupleTwo = "Osama", "Ahmed"
+TupleOne = ("Osama", "Ahmed")
+TupleTwo = "Osama", "Ahmed"
 
-print(myAwesomeTupleOne)
-print(myAwesomeTupleTwo)
+print(TupleOne)
+print(TupleTwo)
 
-print(type(myAwesomeTupleOne))
-print(type(myAwesomeTupleTwo))
+print(type(TupleOne))
+print(type(TupleTwo))
 
 # Tuple Indexing
 
-myAwesomeTupleThree = (1, 2, 3, 4, 5)
-print(myAwesomeTupleThree[0])
-print(myAwesomeTupleThree[-1])
-print(myAwesomeTupleThree[-3])
+TupleThree = (1, 2, 3, 4, 5)
+print(TupleThree[0])
+print(TupleThree[-1])
+print(TupleThree[-3])
 
 # Tuple Assign Values
 
-myAwesomeTupleFour = (1, 2, 3, 4, 5)
-# myAwesomeTupleFour[2] = "Three"
-# print(myAwesomeTupleFour)  # 'tuple' object does not support item assignment
+TupleFour = (1, 2, 3, 4, 5)
+# TupleFour[2] = "Three"
+# print(TupleFour)  # 'tuple' object doesn't support item assignment
 
 # Tuple Data
 
-myAwesomeTupleFive = ("Osama", "Osama", 1, 2, 3, 100.5, True)
-print(myAwesomeTupleFive[1])
-print(myAwesomeTupleFive[-1])
+TupleFive = ("Osama", "Osama", 1, 2, 3, 100.5, True)
+print(TupleFive[1])
+print(TupleFive[-1])
 
 # Tuple With One Element
 
