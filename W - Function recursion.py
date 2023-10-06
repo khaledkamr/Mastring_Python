@@ -2,7 +2,7 @@
 # -- Function Recursion --
 # ------------------------
 # ---------------------------------------------------------------------
-# -- To Understand Recursion, You Need to First Understand Recursion --
+# -- To Understand Recursion, You Need First to Understand Recursion --
 # ---------------------------------------------------------------------
 
 # function to delete the repeated letters

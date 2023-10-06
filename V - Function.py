@@ -20,8 +20,6 @@ dataFromFunction = function_name()
 
 print(dataFromFunction)
 
-
-
 # Function Parameters And Arguments 
 
 a, b, c = "Khaled", "Ahmed", "Ali"
@@ -72,12 +70,11 @@ def full_name(first, middle, last):
 full_name("   osama   ", 'mohamed', "elsayed") # only three arguments allowed
 
 
-
 # Function Default Parameters
 
 # you can add a default value in case the user didn't enter value
 
-def say_hello(name, age="Unknown", country="Unknown"): # default parameter must be in the end 
+def say_hello(name, age = "Unknown", country = "Unknown"): # default parameter must be in the end 
 
   print(f"Hello {name} Your Age is {age} and Your Country Is {country}")
 
@@ -87,9 +84,9 @@ say_hello("Sameh", 38) # value of country will be "unknown" by default
 say_hello("Ramy") # value of age and country will be "unknown" by default
 
 
-
+# ----------------------------------------------------
 # Function Packing, Unpacking Arguments *Args
-
+# ----------------------------------------------------
 #intro:
 
 myList = [1, 2, 3, 5]
@@ -121,9 +118,9 @@ show_details("Osama", "Html", "CSS", "JS")
 show_details("Ahmed", "Html", "CSS", "JS", "Python", "PHP", "MySQL")
 
 
-
-# Function Packing, Unpacking Arguments **KWArgs 
-
+# ----------------------------------------------------
+# -- Function Packing, Unpacking Arguments **KWArgs --
+# ----------------------------------------------------
 
 def show_skills(*skills):
 
@@ -186,7 +183,6 @@ def three():
   x = 7
 
   print(f"Print Variable From Global Scope After One Function Is Called {x}")
-
 
 
 # Lambda Function 
