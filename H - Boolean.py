@@ -1,5 +1,6 @@
-# all about boolean and its operators
-
+# -------------
+# -- Boolean --
+# -------------
 # [1] In Programming You Need to Known Your If Your Code Output is True Or False
 # [2] Boolean Values Are The Two Constant Objects False + True.
 # ---------------------------------------------------------------
@@ -38,6 +39,9 @@ print(bool(None))
 
 print("=" * 50)
 
+# -----------------------
+# -- Boolean Operators --
+# -----------------------
 # and
 # or
 # not
