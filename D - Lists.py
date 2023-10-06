@@ -1,5 +1,6 @@
-#all about lists and its methods
-
+# -----------------------------
+# -- Lists --
+# -----------
 # [1] List is like array in C++ but it's not array
 # [2] List Items Are Enclosed in Square Brackets
 # [3] List Are Ordered, To Use Index To Access Item
@@ -21,6 +22,10 @@ print(myList)
 myList[0:3] = ['A','B','C'] #this call edit not replace
 print(myList) 
 
+
+# -------------------
+# -- Lists Methods --
+# -------------------
 
 # append()
 
@@ -47,7 +52,6 @@ c = ["One", "Two"]
 
 a.extend(b)
 a.extend(c)
-
 print(a)
 
 # remove()
@@ -60,7 +64,10 @@ print(x)
 
 y = [1, 2, 100, 120, -10, 17, 29]
 # y = ["A", "Z", "C"]
-y.sort(reverse=True)
+y.sort() 
+print(y)
+# To sort the list descending :
+y.sort(reverse = True) # reverse is declared to False by default
 print(y)
 
 # reverse()
@@ -103,7 +110,6 @@ print(e.index("Ramy"))
 f = [1, 2, 3, 4, 5, "A", "B"]
 f.insert(0, "Test")
 f.insert(-1, "Test")
-
 print(f)
 
 # pop()
