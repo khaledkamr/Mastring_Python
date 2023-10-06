@@ -1,5 +1,3 @@
-# all about dictionary and its methods
-
 # ---------------------------
 # -- Dictionary --
 # ----------------
@@ -11,10 +9,8 @@
 # [6] Dict Is Not Ordered You Access Its Element With Key
 # ----------------------------
 
-# Dictionary
-
 user = {
-  "name": "Osama",
+  "name": "Khaled",
   "age": 36,
   "country": "Egypt",
   "skills": ["Html", "Css", "JS"],
@@ -24,7 +20,6 @@ user = {
 print(user)
 print(user['country'])
 print(user.get("country"))
-
 print(user.keys())
 print(user.values())
 
@@ -86,7 +81,7 @@ print(allFramework)
 # clear()
 
 user = {
-  "name": "Osama"
+  "name": "Khaled"
 }
 print(user)
 user.clear()
@@ -97,7 +92,7 @@ print("=" * 50)
 # update()
 
 member = {
-  "name": "Osama"
+  "name": "Khaled"
 }
 print(member)
 member["age"] = 36
@@ -110,7 +105,7 @@ print("=" * 50)
 # copy()
 
 main = {
-  "name": "Osama"
+  "name": "Khaled"
 }
 
 b = main.copy()
@@ -124,14 +119,10 @@ print(b)
 print(main.keys())
 print(main.values())
 
-# ------------------------
-# -- Dictionary Methods --
-# ------------------------
-
 # setdefault()
 
 user = {
-  "name": "Osama"
+  "name": "Khaled"
 }
 print(user)
 print(user.setdefault("age", 36))
@@ -142,7 +133,7 @@ print("=" * 40)
 # popitem()
 
 member = {
-  "name": "Osama",
+  "name": "Khaled",
   "skill": "PS4"
 }
 print(member)
@@ -154,7 +145,7 @@ print("=" * 40)
 # items()
 
 view = {
-  "name": "Osama",
+  "name": "Khaled",
   "skill": "XBox"
 }
 
