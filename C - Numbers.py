@@ -54,4 +54,27 @@ print(100 / 20) #5.0
 print(int(110/20)) #5
 print(110 // 20) #5
 
+#---------------------------
+# -- Assignment Operators --
+# --------------------------
+# =
+# +=
+# -=
+# *=
+# /=
+# **=
+# %=
+# //=
+# --------------------------
+
+x = 10  # Var One
+y = 20  # Var Two
+
+# Var One = Self [Operator] Var Two
+# Var One [Operator]= Var Two
+
+# x += y
+x -= y
+
+print(x)
 
