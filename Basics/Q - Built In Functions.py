@@ -2,9 +2,9 @@
 # -- Built In Functions --
 # ------------------------
 # all()    # sum()      # abs()    # slice()
-# any()    # round()    # pow()
-# bin()    # range()    # min() 
-# id()     # print(     # max()
+# any()    # round()    # pow()    # enumerate()
+# bin()    # range()    # min()    # help()
+# id()     # print(     # max()    # reversed()
 # ------------------------
 
 # all()
@@ -94,3 +94,37 @@ a = ["A", "B", "C", "D", "E", "F"]
 print(a[:5])
 print(a[slice(5)])
 print(a[slice(2, 5)])
+
+
+# enumerate(iterable, start=0)
+
+mySkills = ["Html", "Css", "Js", "PHP"]
+
+mySkillsWithCounter = enumerate(mySkills, 20)
+
+print(type(mySkillsWithCounter))
+
+for counter, skill in mySkillsWithCounter:
+  print(f"{counter} - {skill}")
+
+print("#" * 50)
+
+# help()
+# helps you know how the function works
+print(help(print))
+
+print("#" * 50)
+
+# reversed(iterable)
+
+myString = "KHALED"
+
+print(reversed(myString))
+
+for letter in reversed(myString):
+  print(letter, end="")
+  
+print('\n')
+
+for s in reversed(mySkills):
+  print(s)
