@@ -30,33 +30,33 @@ import sys
 sys.path.append(r"D:\Games")
 print(sys.path)
 
-import elzero
-print(dir(elzero))
+import myModule
+print(dir(myModule))
 
-elzero.sayHello("Ahmed")
-elzero.sayHello("Osama")
-elzero.sayHello("Mohamed")
+myModule.sayHello("Ahmed")
+myModule.sayHello("yossif")
+myModule.sayHello("ali")
 
-elzero.sayHowAreYou("Ahmed")
-elzero.sayHowAreYou("Osama")
-elzero.sayHowAreYou("Mohamed")
+myModule.sayHowAreYou("Ahmed")
+myModule.sayHowAreYou("yossif")
+myModule.sayHowAreYou("ali")
 
 # Alias
 
-import elzero as ee
+import myModule as mm
 
-ee.sayHello("Ahmed")
-ee.sayHello("Osama")
-ee.sayHello("Mohamed")
+mm.sayHello("Ahmed")
+mm.sayHello("yossif")
+mm.sayHello("ali")
 
-ee.sayHowAreYou("Ahmed")
-ee.sayHowAreYou("Osama")
-ee.sayHowAreYou("Mohamed")
+mm.sayHowAreYou("Ahmed")
+mm.sayHowAreYou("yossif")
+mm.sayHowAreYou("ali")
 
-from elzero import sayHello
+from myModule import sayHello
 
 sayHello("Osama")
 
-from elzero import sayHello as ss
+from myModule import sayHello as ss
 
 ss("Osama")
