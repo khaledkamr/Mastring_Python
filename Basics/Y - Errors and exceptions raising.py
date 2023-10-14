@@ -9,17 +9,17 @@
 # [6] raise Keyword Used To Raise Your Own Exceptions
 # -----------------------------------------------------------------
 
-x = input("enter positive number : ")
+# x = input("enter positive number : ")
 
-if (type(x) == str):
-    raise ValueError("only numbers allowed")
+# if (type(x) == str):
+#     raise ValueError("only numbers allowed")
 
-elif(x < 0):
-    raise Exception(f"the number {x} is less than zero")
-    print("this will not print because teh error")
+# elif(x < 0):
+#     raise Exception(f"the number {x} is less than zero")
+#     print("this will not print because teh error")
 
-else:
-    print(f"{x} is a positive number")
+# else:
+#     print(f"{x} is a positive number")
 
 
 # -----------------------------------
@@ -35,10 +35,10 @@ try: # test the errors
    num = int(input("enter your age : "))
 
 except ValueError: # handle the errors if there is any
-   print("there is no age = 0")
+   print("this is not intger")
 
 except: # you can do than one except
-   print("this is not intger")
+   print("there is no age = 0")
 
 else: # if there in no error
    print("ok, number is integer")
