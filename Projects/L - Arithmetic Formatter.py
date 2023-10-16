@@ -47,7 +47,7 @@ def arithmetic_arranger(*problem):
             print(f"  {res}")
         print("\n")
 
-def check_digit(x, y):
+def check_digit(x, y, op):
 
     for d1 in x:
         for d2 in y:
@@ -64,9 +64,9 @@ def check_digit(x, y):
                     num1 = eq[0 : eq.find('-')].strip()
                     num2 = eq[eq.find('-') + 1 : ].strip()
                 
-                return check_digit(num1, num2) 
+                return check_digit(num1, num2, op) 
             
-    return eq
+    return f"{x}{op}{y}"
 
 n = int(input("How many problems you got : (1-5) "))
 
@@ -101,7 +101,10 @@ while (n):
             num1 = eq[0 : eq.find('-')].strip()
             num2 = eq[eq.find('-') + 1 : ].strip()
     
-    eq = check_digit(num1, num2)
+    if (eq.find('+') != -1):
+        eq = check_digit(num1, num2, '+')
+    else:
+        eq = check_digit(num1, num2, '-')
 
     mylist.append(eq)
     n -= 1
