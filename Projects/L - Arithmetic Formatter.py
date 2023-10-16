@@ -36,7 +36,7 @@ def arithmetic_arranger(*problem):
 
         res = str(res)
 
-        if (len(res) > max(len(num1), len(num2))): # 2 > 3
+        if (len(res) > max(len(num1), len(num2))): 
             print(f" {res}")
         
         elif (len(res) < max(len(num1), len(num2))):
@@ -47,20 +47,41 @@ def arithmetic_arranger(*problem):
             print(f"  {res}")
         print("\n")
 
+def check_digit(x, y):
+
+    for d1 in x:
+        for d2 in y:
+            if ((ord(d1) >= 97 and ord(d1) <= 122) or (ord(d1) >= 65 and ord(d1) <= 90)
+                or (ord(d2) >= 97 and ord(d2) <= 122) or (ord(d2) >= 65 and ord(d2) <= 90)):
+
+                print("Numbers must only contain digits!")
+                eq = input("enter the problem again : ")
+
+                if(eq.find('+') != -1):
+                    num1 = eq[0 : eq.find('+')].strip()
+                    num2 = eq[eq.find('+') +1 : ].strip()
+                else:
+                    num1 = eq[0 : eq.find('-')].strip()
+                    num2 = eq[eq.find('-') + 1 : ].strip()
+                
+                return check_digit(num1, num2) 
+            
+    return eq
+
 n = int(input("How many problems you got : (1-5) "))
 
-while n > 5 : 
+while (n > 5) : 
     print("Too many problems.")
-    n = int(input("enter the number of problems again : "))
+    n = int(input("Enter the number of problems again : "))
 
 mylist = []
 
 while (n):
-    eq = input("enter the problem : ").strip()
+    eq = input("Enter the problem : ").strip()
 
     while (eq.find('*') != -1 or eq.find('/') != -1):
         print("Operator must be '+' or '-'!")
-        eq = input("enter the problem again : ")
+        eq = input("Enter the problem again : ")
 
     if (eq.find('+') != -1):
         num1 = eq[0 : eq.find('+')].strip()
@@ -71,7 +92,7 @@ while (n):
 
     while (len(num1) > 4 or len(num2) > 4):
         print("Numbers cannot be more than four digits.")
-        eq = input("enter the problem again : ") 
+        eq = input("Enter the problem again : ") 
 
         if (eq.find('+') != -1):
             num1 = eq[0 : eq.find('+')].strip()
@@ -80,34 +101,11 @@ while (n):
             num1 = eq[0 : eq.find('-')].strip()
             num2 = eq[eq.find('-') + 1 : ].strip()
     
-    not_digit = True
-    Break = False
-
-    while not_digit:
-
-        for d1 in num1:     
-            if Break : break
-            for d2 in num2:
-                if ((ord(d1) >= 97 and ord(d1) <= 122) or (ord(d1) >= 65 and ord(d1) <= 90)
-                    or (ord(d2) >= 97 and ord(d2) <= 122) or (ord(d2) >= 65 and ord(d2) <= 90)):
-                    
-                    print("Numbers must only contain digits!")
-                    eq = input("enter the problem again : ")
-
-                    if(eq.find('+') != -1):
-                        num1 = eq[0 : eq.find('+')].strip()
-                        num1 = eq[eq.find('+') +1 : ].strip()
-                    else:
-                        num1 = eq[0 : eq.find('-')].strip()
-                        num2 = eq[eq.find('-') + 1 : ].strip()
-
-                    Break = True
-                    not_digit = True
-                    break
-                else:
-                    not_digit = False
+    eq = check_digit(num1, num2)
 
     mylist.append(eq)
     n -= 1
 
 arithmetic_arranger(*mylist)
+
+
