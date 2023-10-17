@@ -1,51 +1,66 @@
 
-
 def arithmetic_arranger(*problem):
+
+    num1 = []
+    num2 = []
+    op = []
+    res = []
 
     for p in problem:
 
         if (p.find('+') != -1):
-            num1 = p[0 : p.find('+')].strip()
-            num2 = p[p.find('+') + 1 : ].strip()
-            res = int(num1) + int(num2)
+            n1 = p[0 : p.find('+')].strip()
+            n2 = p[p.find('+') + 1 : ].strip()
+            operator = '+'
+            result = int(n1) + int(n2)
         else:
-            num1 = p[0 : p.find('-')].strip()
-            num2 = p[p.find('-') + 1 : ].strip()
-            res = int(num1) - int(num2)
+            n1 = p[0 : p.find('-')].strip()
+            n2 = p[p.find('-') + 1 : ].strip()
+            operator = '-'
+            result = int(n1) - int(n2)
         
+        num1.append(n1)
+        num2.append(n2)
+        op.append(operator)
+        res.append(str(result))
+    
+    for i in range(len(num1)):
         print("  ", end = "")
-
-        if (len(num1) < len(num2)): 
-            print(" " * abs(len(num1) - len(num2)), end = "")
-            print(num1)   
+        if(len(num1[i]) < len(num2[i])):
+            print(" " * abs(len(num1[i]) - len(num2[i])), end = "")
+            print(num1[i], end = "    ")
         else:
-            print(num1)
-        
-        if (p.find('+') != -1):
-            print("+ ", end = "")
+            print(num1[i], end = "    ")
+
+    print(" ")
+    
+    for i in range(len(num2)):
+        print(f"{op[i]} ", end = "")
+        if(len(num2[i]) < len(num1[i])):
+            print(" " * abs(len(num1[i]) - len(num2[i])), end = "")
+            print(num2[i], end = "    ")
         else:
-            print("- ", end = "")
+            print(num2[i], end = "    ")
 
-        if (len(num2) < len(num1)): 
-            print(" " * abs(len(num1) - len(num2)), end = "")
-            print(num2)
-        else:
-            print(num2)
+    print(" ")
 
-        print("-" * (max(len(num1), len(num2)) + 2))
+    for i in range(len(op)):
+        print("-" * (max(len(num1[i]), len(num2[i])) + 2), end = "    ")
 
-        res = str(res)
+    print(" ")
 
-        if (len(res) > max(len(num1), len(num2))): 
-            print(f" {res}")
-        
-        elif (len(res) < max(len(num1), len(num2))):
+    for i in range(len(res)):
+        if(len(res[i]) > max(len(num1[i]), len(num2[i]))):
+            print(f" {res[i]}", end = "    ")
+
+        elif (len(res[i]) < max(len(num1[i]), len(num2[i]))):
             print("  ", end = "")
-            print(" " * abs(max(len(num1), len(num2)) - len(res)), end = "")
-            print(res)
+            print(" " * abs(max(len(num1[i]), len(num2[i])) - len(res[i])), end = "")
+            print(res[i], end = "    ")
         else:
-            print(f"  {res}")
-        print("\n")
+            print(f"  {res[i]}", end = "    ")
+    
+    print(" ")
 
 def check_digit(x, y, op):
 
