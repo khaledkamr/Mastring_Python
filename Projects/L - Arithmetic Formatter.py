@@ -6,11 +6,11 @@ def arithmetic_arranger(*problem):
 
         if (p.find('+') != -1):
             num1 = p[0 : p.find('+')].strip()
-            num2 = p[p.find('+')+1 : ].strip()
+            num2 = p[p.find('+') + 1 : ].strip()
             res = int(num1) + int(num2)
         else:
             num1 = p[0 : p.find('-')].strip()
-            num2 = p[p.find('-')+1 : ].strip()
+            num2 = p[p.find('-') + 1 : ].strip()
             res = int(num1) - int(num2)
         
         print("  ", end = "")
@@ -41,7 +41,7 @@ def arithmetic_arranger(*problem):
         
         elif (len(res) < max(len(num1), len(num2))):
             print("  ", end = "")
-            print(" " * abs(len(str(max(len(num1), len(num2)))) - len(res)), end = "")
+            print(" " * abs(max(len(num1), len(num2)) - len(res)), end = "")
             print(res)
         else:
             print(f"  {res}")
