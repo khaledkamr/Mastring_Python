@@ -16,18 +16,10 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
         S_minute = start_time[start_time.find(':') + 1 : start_time.find('AM')].strip()
 
     D_hour = duration_time[0 : duration_time.find(':')]
+    D_minute = duration_time[duration_time.find(':') + 1 : ].strip()
+    
 
-    if (duration_time.find('PM') != -1):
-        D_time = 'PM'
-    else:
-        D_time = 'AM'
-
-    if(D_time == 'PM'):
-        D_minute = duration_time[duration_time.find(':') + 1 : duration_time.find('PM')].strip()
-    else:
-        D_minute = duration_time[duration_time.find(':') + 1 : duration_time.find('AM')].strip()
-
-    hours = abs(int(S_hour) + int(D_hour))
+    hours = int(S_hour) + int(D_hour)
 
     while(hours > 12):
         hours -= 12
@@ -40,7 +32,7 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
         else:
            S_time = "PM"
         
-    minutes = abs(int(S_minute) + int(D_minute))
+    minutes = int(S_minute) + int(D_minute)
 
     while(minutes > 59):
         minutes -= 60
