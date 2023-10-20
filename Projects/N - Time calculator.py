@@ -20,9 +20,12 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
     
 
     hours = int(S_hour) + int(D_hour)
-
+    count = 0
+    
     while(hours > 12):
         hours -= 12
+        count += 1
+
         if (S_time == 'PM'):
             S_time = 'AM'
 
@@ -37,6 +40,8 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
     while(minutes > 59):
         minutes -= 60
         hours += 1
+        count += 1
+
         if(hours > 12):
             hours -= 12
             if (S_time == 'PM'):
@@ -48,7 +53,23 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
             else:
                 S_time = "PM"
 
-    print(f"{hours}:{minutes} {S_time} and day: {starting_day}")
+    print(f"{hours}:{minutes} {S_time} ", end = "")
+
+    if(starting_day == "unknown"):
+
+        if(count == 1):
+            print("(next day)")
+        elif(count > 1):
+            print(f"({count} days later)")
+    else:
+        print(f", {starting_day} ", end = "")
+
+        if(count == 1):
+            print("(next day)")
+        elif(count > 1):
+            print(f"({count} days later)")
+
+
 
 start_time = input("Enter the starting time : ")
 duration_time = input("Enter the duration time : ")
