@@ -60,8 +60,9 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
                     starting_day = days[d + 1]
             else:
                 S_time = "PM"   
-
-    print(f"{hours}:{minutes} {S_time} ", end = "")
+    
+    minutes = str(minutes)
+    print(f"{hours}:{minutes.zfill(2)} {S_time}", end = "")
 
     if(starting_day == "unknown"):
 
