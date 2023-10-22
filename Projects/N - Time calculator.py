@@ -78,8 +78,6 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
         elif(count > 1):
             print(f"({count} days later)")
 
-
-
 start_time = input("Enter the starting time : ")
 duration_time = input("Enter the duration time : ")
 yesOrNo = input("would you like to add a starting day? (yes or no)")
