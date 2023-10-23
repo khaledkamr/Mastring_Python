@@ -1,39 +1,31 @@
 
-def add_time(start_time, duration_time, starting_day = "unknown"):
+def add_time(start_time, duration_time, start_day = None):
 
-    days = ['saturday', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+    days = ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
-    if (start_time.find('PM') != -1):
-        S_time = 'PM'
-    else:
-        S_time = 'AM'
+    start_time, period = start_time.split()
 
-    S_hour = start_time[0 : start_time.find(':')]
+    S_hour, S_minute = map(int, start_time.split(':'))
+    S_hour %= 12
 
-    if(S_time == 'PM'):
-        S_minute = start_time[start_time.find(':') + 1 : start_time.find('PM')].strip()
-    else:
-        S_minute = start_time[start_time.find(':') + 1 : start_time.find('AM')].strip()
-
-    D_hour = duration_time[0 : duration_time.find(':')]
-    D_minute = duration_time[duration_time.find(':') + 1 : ].strip()
-
-    hours = int(S_hour) + int(D_hour)
-    minutes = int(S_minute) + int(D_minute)
+    D_hour, D_minute = map(int, duration_time.split(':'))
+   
+    hours = S_hour + D_hour
+    minutes = S_minute + D_minute
     count = 0
     
     while(hours > 12):
         hours -= 12
 
-        if (S_time == 'PM'):
-            S_time = 'AM'
+        if (period == 'PM'):
+            period = 'AM'
             count += 1
 
-            if(starting_day != "unknown"):
-                d = days.index(starting_day)
-                starting_day = days[d + 1]
+            if(start_day):
+                d = days.index(start_day)
+                start_day = days[d + 1]
         else:
-           S_time = "PM"
+           period = "PM"
 
     while(minutes > 59):
         minutes -= 60
@@ -41,37 +33,36 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
 
         if(hours > 12):
             hours -= 12
-            if (S_time == 'PM'):
-                S_time = 'AM'
+            if (period == 'PM'):
+                period = 'AM'
                 count += 1
 
-                if(starting_day != "unknown"):
-                    d = days.index(starting_day)
-                    starting_day = days[d + 1]
+                if(start_day):
+                    d = days.index(start_day)
+                    start_day = days[d + 1]
             else:
-                S_time = "PM"     
+                period = "PM"     
         elif(hours == 12):
-            if (S_time == 'PM'):
-                S_time = 'AM'
+            if (period == 'PM'):
+                period = 'AM'
                 count += 1
 
-                if(starting_day != "unknown"):
-                    d = days.index(starting_day)
-                    starting_day = days[d + 1]
+                if(start_day):
+                    d = days.index(start_day)
+                    start_day = days[d + 1]
             else:
-                S_time = "PM"   
+                period = "PM"   
     
     minutes = str(minutes)
-    print(f"{hours}:{minutes.zfill(2)} {S_time}", end = "")
+    print(f"{hours}:{minutes.zfill(2)} {period}", end = "")
 
-    if(starting_day == "unknown"):
-
+    if(start_day):
         if(count == 1):
             print("(next day)")
         elif(count > 1):
             print(f"({count} days later)")
     else:
-        print(f", {starting_day} ", end = "")
+        print(f", {start_day} ", end = "")
 
         if(count == 1):
             print("(next day)")
@@ -80,10 +71,10 @@ def add_time(start_time, duration_time, starting_day = "unknown"):
 
 start_time = input("Enter the starting time : ")
 duration_time = input("Enter the duration time : ")
-yesOrNo = input("would you like to add a starting day? (yes or no)")
+yesOrNo = input("would you like to add a starting day? (yes or no)").lower()
 
 if(yesOrNo == "yes"):
-    starting_day = input("Enter the startig day : ")
-    add_time(start_time, duration_time, starting_day)
+    start_day = input("Enter the startig day : ").lower().capitalize()
+    add_time(start_time, duration_time, start_day)
 else:
     add_time(start_time, duration_time)
