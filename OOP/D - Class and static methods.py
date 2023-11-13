@@ -44,33 +44,33 @@ class Member:
       
       raise ValueError("Name Not Allowed")
 
-  def full_name(self): 
+  def full_name(fullName): 
 
-    return f"{self.fname} {self.mname} {self.lname}"
+    return f"{fullName.fname} {fullName.mname} {fullName.lname}"
 
-  def name_with_title(self):
+  def name_with_title(title):
 
-    if self.gender == "Male":
+    if title.gender == "Male":
 
-      return f"Hello Mr {self.fname}"
+      return f"Hello Mr {title.fname}"
 
-    elif self.gender == "Female":
+    elif title.gender == "Female":
 
-      return f"Hello Miss {self.fname}"
+      return f"Hello Miss {title.fname}"
 
     else:
 
-      return f"Hello {self.fname}"
+      return f"Hello {title.fname}"
 
-  def get_all_info(self):
+  def get_all_info(Info):
 
-    return f"{self.name_with_title()}, Your Full Name Is: {self.full_name()}"
+    return f"{Info.name_with_title()}, Your Full Name Is: {Info.full_name()}"
 
-  def delete_user(self):
+  def delete_user(delete):
 
     Member.users_num -= 1  
 
-    return f"User {self.fname} Is Deleted."
+    return f"User {delete.fname} Is Deleted."
 
 
 member_one = Member("Osama", "Mohamed", "Elsayed", "Male")
