@@ -28,17 +28,11 @@ class Member:
 
   def __init__(self):
 
-    print("A New Member Has Been Added")
+    print("A New Member Has Been Added") #this message will be printed every time instance created
 
-member_one = Member()
-member_two = Member()
-member_three = Member()
+member_one = Member()  #instance
+member_two = Member()  #instance
+member_three = Member()  #instance
 
 print(member_one.__class__)
 
-my_dictionary = {
-  'name': "Osama",
-  'age': 36,
-  'monthly_salary': 5000,
-  'yearly_salary': ''  # Something
-}
