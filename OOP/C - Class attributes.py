@@ -29,9 +29,9 @@ class Member:
       raise ValueError("Name Not Allowed")
 
 
-  def full_name(self): 
+  def full_name(fullName): 
 
-    return f"{self.fname} {self.mname} {self.lname}"
+    return f"{fullName.fname} {fullName.mname} {fullName.lname}"
 
   def name_with_title(title):
 
