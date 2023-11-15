@@ -27,7 +27,7 @@ class member:
 one = member("Khaled")
 print(one.name)
 one.name = "yossif"
-print(one.name)
+print(one.name) 
 
 print("=" * 50)
 
