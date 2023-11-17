@@ -44,9 +44,13 @@ class rectangle:
             
             return rec
 
-    def get_amount_inside(self):
+    def get_amount_inside(self, square):
 
-        pass
+        area1 = self.get_area()
+        area2 = square.get_area()
+
+        return area1//area2
+
 
 class square(rectangle):
 
@@ -73,6 +77,13 @@ class square(rectangle):
         
         self.width = width
         self.height = width
+    
+    def get_amount_inside(self, rectangle):
+        
+        area1 = self.get_area()
+        area2 = rectangle.get_area()
+
+        return area1//area2
 
 rect = rectangle(10, 5)
 print(rect.get_area())
@@ -90,4 +101,6 @@ print(sq.get_picture())
 
 rect.set_height(8)
 rect.set_width(16)
-#print(rect.get_amount_inside(sq))
+print(rect.get_amount_inside(sq))
+
+
