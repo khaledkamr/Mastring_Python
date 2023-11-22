@@ -5,7 +5,6 @@
 # - commit => Save All Changes
 # ------------------------------------------------------
 
-
 # Import SQLite Module
 import sqlite3
 
@@ -16,20 +15,19 @@ db = sqlite3.connect("app.db")
 cr = db.cursor()
 
 # Create The Tables and Fields
-cr.execute("create table if not exists users (user_id integer, name text)")
-cr.execute(
-    "create table if not exists skills (name text, progress integer, user_id integer)")
+cr.execute("CREATE TABLE if not exists users (user_id INTEGER, name TEXT)")
+cr.execute("CREATE TABLE if not exists skills (name TEXT, progress INTEGER, user_id INTEGER)")
 
 # Inserting Data
-# cr.execute("insert into users(user_id, name) values(1, 'Ahmed')")
-# cr.execute("insert into users(user_id, name) values(2, 'Sayed')")
-# cr.execute("insert into users(user_id, name) values(3, 'Osama')")
+cr.execute("insert into users(user_id, name) values(1, 'khaled')")
+cr.execute("insert into users(user_id, name) values(2, 'yossif')")
+cr.execute("insert into users(user_id, name) values(3, 'yassen')")
 
-# my_list = ["Ahmed", "Sayed", "Mahmoud", "Ali", "Kamel", "Ibrahim", "Enas"]
+users = ["ahmed", "ali", "abdo", "tark", "ibrahim", "khaled"]
 
-# for key, user in enumerate(my_list):
+for key, user in enumerate(users):
 
-#     cr.execute(f"insert into users(user_id, name) values({key + 1}, '{user}')")
+    cr.execute(f"insert into users(user_id, name) values({key + 1}, '{user}')")
 
 # Save (Commit) Changes
 db.commit()
