@@ -1,6 +1,3 @@
-# ----------------------------------------------
-# -- Databases => SQLite => Create Skills App --
-# ----------------------------------------------
 
 import sqlite3
 
@@ -57,7 +54,7 @@ def add_skill():
     else:
         print("skill is exists, you can't add it")
         choise = input("would you like to update the skill?")
-        
+
         if(choise == "yes"):
             prog = input("write the new skill progress ").strip()
             cr.execute(f"update skills set progress = '{prog}' where name = '{sk}' and id = '{uid}'")
