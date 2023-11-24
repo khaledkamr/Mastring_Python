@@ -19,6 +19,8 @@ name = "khaled"
 print(name * 1000)
 print(timeit.timeit("name = 'khaled'; name * 1000"))
 
+print("=" * 50)
+
 print(random.randint(0, 50))
 print(timeit.timeit(stmt="random.randint(0, 50)", setup="import random"))
 
