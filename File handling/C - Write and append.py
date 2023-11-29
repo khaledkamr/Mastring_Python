@@ -9,6 +9,10 @@ myfile.write("hello from python\n")
 myfile.write("new line\n")
 
 myList = ["khaled\n", "yossif\n", "ahmed\n"]
+
+for name in myList:
+    myfile.write(name)
+
 myfile.writelines(myList)
 
 # the append mode doesn't overwrite the file
