@@ -25,4 +25,6 @@
 # - NumPy On Github => https://github.com/numpy/numpy
 # ---------------------------------------------------
 
-import numpy
+import numpy as np
+
+print(np.__version__)
