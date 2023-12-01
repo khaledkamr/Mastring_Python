@@ -65,4 +65,4 @@ print(my_array8[0].itemsize) # 4 Bytes
 
 my_array8 = np.array([100,200,300,400], dtype=float)
 print(my_array8.dtype)
-print(my_array8[0].itemsize) # 8 Bytes
+print(my_array8[0].itemsize) # 8 Bytes 
