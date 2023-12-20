@@ -6,7 +6,7 @@ import os
 
 myfile = open("D:\khaled.txt", "a")
 
-myfile.truncate(5) # cut the content of the file to 5 characters
+myfile.truncate(5) # cut the content of the file to 5 characters and remove the rest
 
 print(myfile.tell()) # return the position of the cursor in the file
 
