@@ -18,7 +18,7 @@ def function_name():
 
 dataFromFunction = function_name()
 
-print(dataFromFunction)
+print(dataFromFunction)  # Hello Python From Inside Function
 
 # Function Parameters And Arguments 
 
@@ -34,9 +34,9 @@ def say_hello(n):
 
   print(f"Hello {n}")
 
-say_hello(a)
-say_hello(b)
-say_hello(c)
+say_hello(a)    # Hello Khaled
+say_hello(b)    # Hello Ahmed
+say_hello(c)    # Hello Ali
 
 #EX.1:
 
@@ -44,8 +44,8 @@ def addition(n1, n2):
 
   print(n1 + n2)
 
-addition(100, 300)
-addition(-50, 100)
+addition(100, 300)   # 400
+addition(-50, 100)   # 50
 
 #EX.2:
 
@@ -59,7 +59,7 @@ def addition(n1, n2):
 
     print(n1 + n2)
 
-addition(100, 500) # only two arguments allowed
+addition(100, 500) # 600
 
 #EX.3:
 
@@ -67,7 +67,7 @@ def full_name(first, middle, last):
 
   print(f"Hello {first.strip().capitalize()} {middle.upper():.1s} {last.capitalize()}")
 
-full_name("   osama   ", 'mohamed', "elsayed") # only three arguments allowed
+full_name("   osama   ", 'mohamed', "elsayed")   # Hello Osama M Elsayed
 
 
 # Function Default Parameters
@@ -78,10 +78,10 @@ def say_hello(name, age = "Unknown", country = "Unknown"): # default parameter m
 
   print(f"Hello {name} Your Age is {age} and Your Country Is {country}")
 
-say_hello("Osama", 36, "Egypt")
-say_hello("Mahmoud", 28, "KSA")
-say_hello("Sameh", 38) # value of country will be "unknown" by default
-say_hello("Ramy") # value of age and country will be "unknown" by default
+say_hello("Osama", 36, "Egypt")  # Hello Osama Your Age is 36 and Your Country Is Egypt
+say_hello("Mahmoud", 28, "KSA")  # Hello Mahmoud Your Age is 28 and Your Country Is KSA
+say_hello("Sameh", 38)           # Hello Sameh Your Age is 38 and Your Country Is Unknown
+say_hello("Ramy")                # Hello Ramy Your Age is Unknown and Your Country Is Unknown
 
 
 # ----------------------------------------------------
@@ -91,8 +91,8 @@ say_hello("Ramy") # value of age and country will be "unknown" by default
 
 myList = [1, 2, 3, 5]
 
-print(myList)
-print(*myList)
+print(myList)    # [1, 2, 3, 5]
+print(*myList)   # 1 2 3 5
 
 #EX.1:
 
@@ -103,6 +103,12 @@ def say_hello(*peoples):  # n1, n2, n3, n4
     print(f"Hello {name}")
 
 say_hello("Osama", "Ahmed", "Sayed", "Mahmoud") # you can add infinte arguments
+'''
+Hello Osama
+Hello Ahmed
+Hello Sayed
+Hello Mahmoud
+'''
 
 #EX.2:
 
@@ -116,6 +122,19 @@ def show_details(name, *skills):
 
 show_details("Osama", "Html", "CSS", "JS")
 show_details("Ahmed", "Html", "CSS", "JS", "Python", "PHP", "MySQL")
+'''
+Hello Osama Your Skills Is:
+Html
+CSS
+JS
+Hello Ahmed Your Skills Is:
+Html
+CSS
+JS
+Python
+PHP
+MySQL
+'''
 
 
 # ----------------------------------------------------
@@ -131,6 +150,12 @@ def show_skills(*skills):
     print(f"{skill}")
 
 show_skills("Html", "CSS", "JS") 
+'''
+<class 'tuple'>
+Html
+CSS
+JS
+'''
 
 # If you wanna add dict type arguments, put "**" before the parameter
 
@@ -171,9 +196,9 @@ def two():
 
   print(f"Print Variable From Function Scope {x}")
 
-print(f"Print Variable From Global Scope {x}") # 1
-one() # 2
-two() # 4
+print(f"Print Variable From Global Scope {x}") #  Print Variable From Global Scope 1
+one() #  Print Variable From Function Scope 2
+two() #  Print Variable From Function Scope 4
 
 # you can define the variable as global from function scope like this
 
@@ -200,12 +225,12 @@ def say_hello(name, age) : return f"Hello {name} your Age Is: {age}" # function
 
 hello = lambda name, age : f"Hello {name} your Age Is: {age}" # lambda
 
-print(say_hello("Ahmed", 36))
-print(hello("Ahmed", 36))
+print(say_hello("Ahmed", 36))   # Hello Ahmed your Age Is: 36
+print(hello("Ahmed", 36))       # Hello Ahmed your Age Is: 36
 
 # name of the function
-print(say_hello.__name__) # say hallo 
-print(hello.__name__) # <lamda> # doesn't have a name
+print(say_hello.__name__)  # say hallo 
+print(hello.__name__)      # <lamda> 
 
 # there is no difference between lambda and function in the type 
-print(type(hello)) # <function>
+print(type(hello))    # <class 'function'>

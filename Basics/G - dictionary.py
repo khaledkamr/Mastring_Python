@@ -17,11 +17,11 @@ user = {
   "rating": 10.5
 }
 
-print(user)
-print(user['country'])
-print(user.get("country"))
-print(user.keys())
-print(user.values())
+print(user)                 # {'name': 'Khaled', 'age': 36, 'country': 'Egypt', 'skills': ['Html', 'Css', 'JS'], 'rating': 10.5}
+print(user['country'])      # Egypt
+print(user.get("country"))  # Egypt
+print(user.keys())          # dict_keys(['name', 'age', 'country', 'skills', 'rating'])
+print(user.values())        # dict_values(['Khaled', 36, 'Egypt', ['Html', 'Css', 'JS'], 10.5])
 
 # Two-Dimensional Dictionary
 
@@ -40,14 +40,14 @@ languages = {
   }
 }
 
-print(languages)
-print(languages['One'])
-print(languages['Three']['name'])
+print(languages)                   # {'One': {'name': 'Html', 'progress': '80%'}, 'Two': {'name': 'Css', 'progress': '90%'}, 'Three': {'name': 'Js', 'progress': '90%'}}
+print(languages['One'])            # {'name': 'Html', 'progress': '80%'}
+print(languages['Three']['name'])  # Js
 
 # Dictionary Length
-
-print(len(languages))
-print(len(languages["Two"]))
+ 
+print(len(languages))         # 3
+print(len(languages["Two"]))  # 2
 
 # Create Dictionary From Variables
 
@@ -72,7 +72,7 @@ allFramework = {
   "three": frameworkThree
 }
 
-print(allFramework)
+print(allFramework)    # {'one': {'name': 'Vuejs', 'progress': '80%'}, 'two': {'name': 'ReactJs', 'progress': '80%'}, 'three': {'name': 'Angular', 'progress': '80%'}}
 
 # ------------------------
 # -- Dictionary Methods --
@@ -83,9 +83,9 @@ print(allFramework)
 user = {
   "name": "Khaled"
 }
-print(user)
+print(user)       # {'name': 'Khaled'}
 user.clear()
-print(user)
+print(user)       # {}
 
 print("=" * 50)
 
@@ -94,12 +94,12 @@ print("=" * 50)
 member = {
   "name": "Khaled"
 }
-print(member)
+print(member)         # {'name': 'Khaled'}
 member["age"] = 36
-print(member)
+print(member)         # {'name': 'Khaled', 'age': 36}
 member.update({"country": "Egypt"})
-print(member)
-
+print(member)         # {'name': 'Khaled', 'age': 36, 'country': 'Egypt'}
+ 
 print("=" * 50)
 
 # copy()
@@ -109,24 +109,24 @@ main = {
 }
 
 b = main.copy()
-print(b)
+print(b)       # {'name': 'Khaled'}
 main.update({"skills": "Fighting"})
-print(main)
-print(b)
+print(main)    # {'name': 'Khaled', 'skills': 'Fighting'}
+print(b)       # {'name': 'Khaled'}
 
 # keys() + values()
 
-print(main.keys())
-print(main.values())
+print(main.keys())    # dict_keys(['name', 'skills'])
+print(main.values())  # dict_values(['Khaled', 'Fighting'])
 
 # setdefault()
 
 user = {
   "name": "Khaled"
 }
-print(user)
-print(user.setdefault("age", 36))
-print(user)
+print(user)    # {'name': 'Khaled'}
+print(user.setdefault("age", 36))  # 36
+print(user)    # {'name': 'Khaled', 'age': 36}
 
 print("=" * 40)
 
@@ -136,9 +136,9 @@ member = {
   "name": "Khaled",
   "skill": "PS4"
 }
-print(member)
+print(member)    # 'name': 'Khaled', 'skill': 'PS4'}
 member.update({"age": 36})
-print(member.popitem())
+print(member.popitem())    # ('age', 36)
 
 print("=" * 40)
 
@@ -150,10 +150,10 @@ view = {
 }
 
 allItems = view.items()
-print(view)
+print(view)       # {'name': 'Khaled', 'skill': 'XBox'}
 view["age"] = 36
 
-print(allItems)
+print(allItems)   # dict_items([('name', 'Khaled'), ('skill', 'XBox'), ('age', 36)])
 
 print("=" * 40)
 
@@ -162,4 +162,4 @@ print("=" * 40)
 a = ('MyKeyOne', 'MyKeyTwo', 'MyKeyThree')
 b = "X"
 
-print(dict.fromkeys(a, b))
+print(dict.fromkeys(a, b))   # {'MyKeyOne': 'X', 'MyKeyTwo': 'X', 'MyKeyThree': 'X'}

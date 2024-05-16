@@ -31,16 +31,28 @@ my_variable = "value"  #two words -> snake_case
 #Python dynamicly typed languege
 x = 10
 x = "ten"
-print(x)
+print(x)  # ten
 
 #reserved words
 help("keywords")
 
+'''Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not'''
+
 a, b, c = 1, 2, 3
 
-print(a)
-print(b)
-print(c)
+print(a)    # 1 
+print(b)    # 2 
+print(c)    # 3  
 
 
 # ---------------

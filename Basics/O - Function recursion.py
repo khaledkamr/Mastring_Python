@@ -24,3 +24,19 @@ def cleanWord(word):
 
 
 print(cleanWord("WWWoooorrrldd"))
+
+'''
+Print Before Condition: WWWoooorrrldd
+Print Before Condition: WWoooorrrldd
+Print Before Return: Woooorrrldd
+Print Before Condition: oooorrrldd
+Print Before Condition: ooorrrldd
+Print Before Condition: oorrrldd
+Print Before Return: orrrldd
+Print Before Condition: rrrldd
+Print Before Condition: rrldd
+Print Before Return: rldd
+Print Before Return: ldd
+Print Before Condition: dd
+World
+'''

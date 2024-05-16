@@ -6,36 +6,36 @@
 # ---------------------------------------------------------------
 
 name = " "
-print(name.isspace())
+print(name.isspace())  # True
 
 print("=" * 50)
 
-print(100 > 200)
-print(100 > 100)
-print(100 > 90)
+print(100 > 200)     # False
+print(100 > 100)     # False
+print(100 > 90)      # True
 
 print("=" * 50)
 
 # True Values
 
-print(bool("Osama"))
-print(bool(100))
-print(bool(100.95))
-print(bool(True))
-print(bool([1, 2, 3, 4, 5]))
+print(bool("Osama"))    # True
+print(bool(100))    # True
+print(bool(100.95))    # True
+print(bool(True))    # True
+print(bool([1, 2, 3, 4, 5]))    # True
 
 print("=" * 50)
 
 # False Values
 
-print(bool(0))
-print(bool(""))
-print(bool(''))
-print(bool([]))
-print(bool(False))
-print(bool(()))
-print(bool({}))
-print(bool(None))
+print(bool(0))        # False
+print(bool(""))       # False
+print(bool(''))       # False
+print(bool([]))       # False
+print(bool(False))    # False
+print(bool(()))       # False
+print(bool({}))       # False
+print(bool(None))     # False
 
 print("=" * 50)
 
@@ -58,7 +58,7 @@ print(age > 40 or country == "KSA" or rank > 20)  # False
 print(age > 40 or country == "Egypt" or rank > 20)  # True
 
 print(age > 16)  # True
-print(not age > 16)  # Not True = False
+print(not age > 16)  # False
 
 # --------------------------
 # -- Comparison Operators --
@@ -73,44 +73,44 @@ print(not age > 16)  # Not True = False
 
 # Equal + Not Equal
 
-print(100 == 100)
-print(100 == 100.00)
+print(100 == 100)       # True
+print(100 == 100.00)    # True
 
-print("#" * 50)
+print("=" * 50)
 
-print(100 != 100)
-print(100 != 100.00)
+print(100 != 100)      # False
+print(100 != 100.00)   # False
 
-print("#" * 50)
+print("=" * 50)
 
 # Greater Than + Less Than
 
-print(100 > 100)
-print(100 > 200)
-print(100 > 100.00)
-print(100 > 40)
+print(100 > 100)       # False
+print(100 > 200)       # False
+print(100 > 100.00)    # False
+print(100 > 40)        # True
 
-print("#" * 50)
+print("=" * 50)
 
-print(100 < 100)
-print(100 < 200)
-print(100 < 100.00)
-print(100 < 40)
+print(100 < 100)       # False
+print(100 < 200)       # True
+print(100 < 100.00)    # False
+print(100 < 40)        # False
 
-print("#" * 50)
+print("=" * 50)
 
 # Greater Than Or Equal + Less Than Or Equal
 
-print(100 >= 100)
-print(100 >= 200)
-print(100 >= 100.00)
-print(100 >= 40)
+print(100 >= 100)      # True
+print(100 >= 200)      # False
+print(100 >= 100.00)   # True
+print(100 >= 40)       # True
 
-print("#" * 50)
+print("=" * 50)
 
-print(100 <= 100)
-print(100 <= 200)
-print(100 <= 100.00)
-print(100 <= 40)
+print(100 <= 100)      # True
+print(100 <= 200)      # True
+print(100 <= 100.00)   # True
+print(100 <= 40)       # False
 
-print("#" * 50)
+print("=" * 50)

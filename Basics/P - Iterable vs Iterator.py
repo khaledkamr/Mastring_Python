@@ -21,18 +21,26 @@ for l in String:
 for n in List:
   print(n, end=" ")
 
+'''
+K H A L E D 1 2 3 4 5
+'''
+
 # For Loop Already Calls iter() Method
 # the variables 'n' and 'l' are iterators
 #------------------------------------------
 
 Iterator = iter(String)
 
-print(next(Iterator))
-print(next(Iterator))
-print(next(Iterator))
-print(next(Iterator))
-print(next(Iterator))
-print(next(Iterator))
+print(next(Iterator))   # K
+print(next(Iterator))   # H
+print(next(Iterator))   # A
+print(next(Iterator))   # L
+print(next(Iterator))   # E
+print(next(Iterator))   # D
 
 for L in iter("KHALED"):
   print(L, end=" ")
+
+'''
+K H A L E D
+'''

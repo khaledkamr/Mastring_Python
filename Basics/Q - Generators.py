@@ -17,11 +17,24 @@ def Gen():
 
 myGen = Gen()
 
-print(next(myGen))
-print(next(myGen))
-print(next(myGen))
+print(next(myGen))   # 1
+print(next(myGen))   # 2
+print(next(myGen))   # 3
 print("\nnow generator iterator stoped at yeild 3")
+'''
+
+now generator iterator stoped at yeild 3
+'''
 print("and the for loop while resume from there\n")
+'''
+and the for loop while resume from there
+
+'''
 
 for num in myGen:
   print(num)
+
+'''
+4
+5
+'''

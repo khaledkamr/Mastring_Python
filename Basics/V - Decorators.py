@@ -14,12 +14,11 @@ def myDecorator(func):  # Decorator
 
     print("Before")  # Message From Decorator
 
-    func()  # Execute Function
+    func()   # Execute Function
 
     print("After")  # Message From Decorator
 
   return nestedFunc  # Return All Data
-
 
 @myDecorator
 def sayHello():
@@ -29,13 +28,32 @@ def sayHowAreYou():
   print("Hello From Say How Are You Function")
 
 sayHello()
+
+'''
+Before
+Hello From Say Hello Function
+After
+'''
+
 print("=" * 40)
 
 afterDecoration = myDecorator(sayHowAreYou)
 afterDecoration()
-print("=" * 40)
+
+'''
+Before
+Hello From Say How Are You Function
+After
+'''
+
+print("=" * 40)  
 
 sayHowAreYou()
+
+'''
+Hello From Say How Are You Function
+'''
+
 print("=" * 40)
 
 # ------------------------------
@@ -72,6 +90,12 @@ def calc(n1, n2):
 
 calc(10, 90)
 
+'''
+Before
+Coming From Decorator Two
+100
+After
+'''
 
 # ----------------------------------------
 # -- Function With Unlimited Parameters --
@@ -97,3 +121,8 @@ def calc(n1, n2, n3):
 
 calc(10, 10, 10)
 
+'''
+before
+30
+after
+'''

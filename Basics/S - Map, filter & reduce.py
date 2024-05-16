@@ -15,10 +15,16 @@ myTexts = [" khaled ", "kamr", "  ahmed  "]
 
 myFormatedData = map(formatText, myTexts)
 
-print(myFormatedData)
+print(myFormatedData)   # <map object at 0x0000021CC7C4BEE0>
 
 for name in myFormatedData:
   print(name)
+
+'''
+- Khaled -
+- Kamr -
+- Ahmed -
+'''
 
 print("=" * 50)
 
@@ -32,7 +38,11 @@ myTexts = [" OSama ", "AHMED", "  sAYed  "]
 for name in list(map((lambda text: f"- {text.strip().capitalize()} -"), myTexts)):
   print(name)
 
-
+'''
+- Osama -
+- Ahmed -
+- Sayed -
+'''
 
 # ----------------------------------
 # -- Built In Functions => Filter --
@@ -56,7 +66,13 @@ myResult = filter(checkNumber, myNumbers)
 for num in myResult:
   print(num)
 
-print("#" * 50)
+'''
+19
+20
+100
+'''
+
+print("=" * 50)
 
 # Ex2:
 
@@ -70,7 +86,14 @@ myReturnedData = filter(checkName, myTexts)
 for person in myReturnedData:
   print(person)
 
-print("#" * 50)
+'''
+Osama
+Omer
+Omar
+Othman
+'''
+
+print("=" * 50)
 
 # Ex3:
 
@@ -79,6 +102,10 @@ myNames = ["Osama", "Omer", "Omar", "Ahmed", "Sayed", "Othman", "Ameer"]
 for p in filter(lambda name: name.startswith("A"), myNames):
   print(p)
 
+'''
+Ahmed
+Ameer
+'''
 
 # ----------------------------------
 # -- Built In Functions => Reduce --
@@ -102,7 +129,7 @@ numbers = [1, 8, 2, 9, 100]
 result = reduce(sumAll, numbers)
 
 #result = reduce(lambda num1, num2: num1 + num2, numbers)
-
-print(result)
+ 
+print(result)  # 120
 
 # ((((1 + 8) + 2) + 9) + 100)

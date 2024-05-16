@@ -17,16 +17,19 @@ while (i < len(myF)):  # i < 10
 else:
   print("All Friends Printed To Screen.")
 
-# print(myF[0])
-# print(myF[1])
-# print(myF[2])
-# print(myF[3])
-# print(myF[4])
-# print(myF[5])
-# print(myF[6])
-# print(myF[7])
-# print(myF[8])
-# print(myF[9])
+'''
+#01 Os
+#02 Ah
+#03 Ga
+#04 Al
+#05 Ra
+#06 Sa
+#07 Ta
+#08 Ma
+#09 Mo
+#10 Wa
+All Friends Printed To Screen.
+'''
 
 # -----------------
 # -- Loop => For --
@@ -52,12 +55,34 @@ for num in Numbers:
 else:
   print("The Loop Is Finished")
 
+'''
+The Number 1 Is Odd.
+The Number 2 Is Even.
+The Number 3 Is Odd.
+The Number 4 Is Even.
+The Number 5 Is Odd.
+The Number 6 Is Even.
+The Number 7 Is Odd.
+The Number 8 Is Even.
+The Number 9 Is Odd.
+The Loop Is Finished
+'''
+
 
 myName = "Khaled"
 
 for letter in myName:
 
   print(f" [ {letter.upper()} ] ")
+
+'''
+ [ K ]
+ [ H ]
+ [ A ]
+ [ L ]
+ [ E ]
+ [ D ]
+'''
 
 # Range
 
@@ -82,6 +107,14 @@ for skill in mySkills:
 
   print(f"My Progress in Lang {skill} Is: {mySkills[skill]}") 
 
+'''
+My Progress in Lang Html Is: 90%
+My Progress in Lang Css Is: 60%
+My Progress in Lang PHP Is: 70%
+My Progress in Lang JS Is: 80%
+My Progress in Lang Python Is: 90%
+My Progress in Lang MySQL Is: 60%
+'''
 
 # ---------------------------
 # -- Break, Continue, Pass --

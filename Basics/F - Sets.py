@@ -11,31 +11,31 @@
 # Not Ordered And Not Indexed
 
 mySetOne = {"Khaled", "Ahmed", 100}
-print(mySetOne)
-# print(mySetOne[0]) #error
+print(mySetOne)      # {'Khaled', 100, 'Ahmed'}
+print(mySetOne[0])   # TypeError: 'set' object is not subscriptable
 
 # Slicing Can't Be Done
 
 mySetTwo = {1, 2, 3, 4, 5, 6}
-# print(mySetTwo[0:3]) #error
+print(mySetTwo[0:3]) # TypeError: 'set' object is not subscriptable
 
 # Has Only Immutable Data Types
 
-# mySetThree = {"Osama", 100, 100.5, True, [1, 2, 3]} # unhashable type: 'list'
-mySetThree = {"Khaled", 100, 100.5, True, (1, 2, 3)}
+mySetThree = {"Osama", 100, 100.5, True, [1, 2, 3]}   # TypeError: unhashable type: 'list'
+mySetThree = {"Khaled", 100, 100.5, True, (1, 2, 3)}   
 
-print(mySetThree)
+print(mySetThree)   # {True, 'Khaled', 100, 100.5, (1, 2, 3)}
 
 # Items Is Unique
 
 mySetFour = {1, 2, "Khaled", "One", "Khaled", 1}
-print(mySetFour)
+print(mySetFour)    # {1, 2, 'Khaled', 'One'}
 
 # clear()
 
 a = {1, 2, 3}
 a.clear()
-print(a)
+print(a)    # set()
 
 # union()
 
@@ -43,47 +43,47 @@ b = {"One", "Two", "Three"}
 c = {"1", "2", "3"}
 x = {"Zero", "Cool"}
 
-print(b | c)
-print(b.union(c, x))
+print(b | c)            # {'Three', 'Two', '3', 'One', '1', '2'}
+print(b.union(c, x))    # {'Three', 'Two', '3', 'Zero', 'One', '1', '2', 'Cool'}
 
 # add()
 
 d = {1, 2, 3, 4}
 d.add(5)
 d.add(6)
-print(d)
+print(d)   # {1, 2, 3, 4, 5, 6}
 
 # copy()
 
 e = {1, 2, 3, 4}
 f = e.copy()
 
-print(e)
-print(f)
+print(e)    # {1, 2, 3, 4}
+print(f)    # {1, 2, 3, 4}
 
 e.add(6)
 
-print(e)
-print(f)
+print(e)     # {1, 2, 3, 4, 6}
+print(f)     # {1, 2, 3, 4}
 
 # remove()
 
 g = {1, 2, 3, 4}
 g.remove(1)
-# g.remove(7)
-print(g)
+#g.remove(7)   # KeyError: 7
+print(g)      # {2, 3, 4}
 
 # discard()
 
 h = {1, 2, 3, 4}
 h.discard(1)
 h.discard(7)
-print(h)
+print(h)       # {2, 3, 4}
 
 # pop()
 
 i = {"A", True, 1, 2, 3, 4, 5}
-print(i.pop())
+print(i.pop())     # A
 
 # update()
 
@@ -92,15 +92,15 @@ k = {1, "A", "B", 2}
 j.update(['Html', "Css"])
 j.update(k)
 
-print(j)
-
+print(j)      # {1, 2, 3, 'B', 'Css', 'Html', 'A'}
+ 
 # difference()
 
 a = {1, 2, 3, 4}
 b = {1, 2, 3, "Khaled", "Ahmed"}
-print(a)
-print(a.difference(b))  # a - b
-print(a)
+print(a)                 # {1, 2, 3, 4}
+print(a.difference(b))   # {4}
+print(a)                 # {1, 2, 3, 4}
 
 print("=" * 40)  # Separator
 
@@ -108,9 +108,9 @@ print("=" * 40)  # Separator
 
 c = {1, 2, 3, 4}
 d = {1, 2, "Khaled", "Ahmed"}
-print(c)
-c.difference_update(d)  # c - d
-print(c)
+print(c)                 # {1, 2, 3, 4}
+c.difference_update(d)   
+print(c)                 # {3, 4}
 
 print("=" * 40)  # Separator
 
@@ -118,9 +118,9 @@ print("=" * 40)  # Separator
 
 e = {1, 2, 3, 4, "X", "Khaled"}
 f = {"Khaled", "X", 2}
-print(e)
-print(e.intersection(f))  # e & f
-print(e)
+print(e)                    # {1, 2, 3, 4, 'X', 'Khaled'}
+print(e.intersection(f))    # {2, 'X', 'Khaled'}
+print(e)                    # {1, 2, 3, 4, 'X', 'Khaled'}
 
 print("=" * 40)  # Separator
 
@@ -128,9 +128,9 @@ print("=" * 40)  # Separator
 
 g = {1, 2, 3, 4, "X", "Khaled"}
 h = {"Khaled", "X", 2}
-print(g)
-g.intersection_update(h)  # g & h
-print(g)
+print(g)                    # {1, 2, 3, 4, 'X', 'Khaled'}
+g.intersection_update(h)    
+print(g)                    # {2, 'X', 'Khaled'}
 
 print("=" * 40)  # Separator
 
@@ -138,9 +138,9 @@ print("=" * 40)  # Separator
 
 i = {1, 2, 3, 4, 5, "X"}
 j = {"Khaled", "Zero", 1, 2, 4, "X"}
-print(i)
-print(i.symmetric_difference(j))  # i ^ j
-print(i)
+print(i)                          # {1, 2, 3, 4, 5, 'X'}
+print(i.symmetric_difference(j))  # {3, 5, 'Zero', 'Khaled'}
+print(i)                          # {1, 2, 3, 4, 5, 'X'}
 
 print("=" * 40)  # Separator
 
@@ -148,10 +148,10 @@ print("=" * 40)  # Separator
 
 k = {1, 2, 3, 4, 5, "X"}
 l = {"Khaled", "Zero", 1, 2, 4, "X"}
-print(k)
-k.symmetric_difference_update(l)  # k ^ l
-print(k)
-
+print(k)                          # {1, 2, 3, 4, 5, 'X'}
+k.symmetric_difference_update(l)  
+print(k)                          # {3, 5, 'Zero', 'Khaled'}
+ 
 # issuperset()
 
 a = {1, 2, 3, 4}

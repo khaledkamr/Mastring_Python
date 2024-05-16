@@ -15,6 +15,24 @@ for name in peoples:  # Outer Loop
 
     print(f"- {skill}")
 
+'''
+Osama Skills Is: 
+- Html
+- Css
+- Js
+Ahmed Skills Is:
+- Html
+- Css
+- Js
+Sayed Skills Is:
+- Html
+- Css
+- Js
+Ali Skills Is:
+- Html
+- Css
+- Js
+'''
 
 # Dictionary
 

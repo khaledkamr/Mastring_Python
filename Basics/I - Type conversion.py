@@ -5,8 +5,8 @@
 # str()
 
 a = 10
-print(type(a))
-print(type(str(a)))
+print(type(a))       # <class 'int'>
+print(type(str(a)))  # <class 'str'>
 
 print("=" * 50)
 
@@ -17,10 +17,10 @@ d = [1, 2, 3, 4, 5]  # List
 e = {"A", "B", "C"}  # Set
 f = {"A": 1, "B": 2}  # Dictionary
 
-print(tuple(c))
-print(tuple(d))
-print(tuple(e))
-print(tuple(f))
+print(tuple(c))   # ('O', 's', 'a', 'm', 'a')
+print(tuple(d))   # (1, 2, 3, 4, 5)
+print(tuple(e))   # ('C', 'B', 'A')
+print(tuple(f))   # ('A', 'B')
 
 print("=" * 50)
 
@@ -31,10 +31,10 @@ d = (1, 2, 3, 4, 5)  # Tuple
 e = {"A", "B", "C"}  # Set
 f = {"A": 1, "B": 2}  # Dictionary
 
-print(list(c))
-print(list(d))
-print(list(e))
-print(list(f))
+print(list(c))   # ['O', 's', 'a', 'm', 'a']
+print(list(d))   # [1, 2, 3, 4, 5]
+print(list(e))   # ['C', 'B', 'A']
+print(list(f))   # ['A', 'B']
 
 print("=" * 50)
 
@@ -45,10 +45,10 @@ d = (1, 2, 3, 4, 5)  # Tuple
 e = ["A", "B", "C"]  # List
 f = {"A": 1, "B": 2}  # Dictionary
 
-print(set(c))
-print(set(d))
-print(set(e))
-print(set(f))
+print(set(c))    # {'a', 'm', 's', 'O'}
+print(set(d))    # {1, 2, 3, 4, 5}
+print(set(e))    # {'C', 'B', 'A'}
+print(set(f))    # {'B', 'A'}
 
 print("=" * 50)
 
@@ -58,5 +58,5 @@ print("=" * 50)
 d = (("A", 1), ("B", 2), ("C", 3))  # Tuple
 e = [["One", 1], ["Two", 2], ["Three", 3]]  # List
 
-print(dict(d))
-print(dict(e))
+print(dict(d))   # {'A': 1, 'B': 2, 'C': 3}
+print(dict(e))   # {'One': 1, 'Two': 2, 'Three': 3}
