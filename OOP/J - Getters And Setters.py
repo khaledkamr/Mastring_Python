@@ -26,4 +26,4 @@ class member:
 one = member("Khaled")
 
 one.setName("yossif")
-print(one.getName())
+print(one.getName())  # yossif

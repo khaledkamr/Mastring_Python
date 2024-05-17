@@ -1,4 +1,4 @@
-# --------------------------------------------------------------------
+   # # --------------------------------------------------------------------
 # -- Object Oriented Programming => Instance Attributes and Methods --
 # --------------------------------------------------------------------
 # Self: Point To Instance Created From Class
@@ -38,11 +38,11 @@ member_three = Member("Mona", "Ali", "Mahmoud", "Female")
 
 # print(dir(member_one))
 
-print(member_one.fname, member_one.mname, member_one.lname)
-print(member_two.fname)
-print(member_three.fname)
+print(member_one.fname, member_one.mname, member_one.lname)   # khaled kamr rashad
+print(member_two.fname)   # Ahmed
+print(member_three.fname)   # Mona
 
-print(member_two.full_name())
-print(member_two.name_with_title())
+print(member_two.full_name())   # Ahmed Ali Mahmoud
+print(member_two.name_with_title())   # Hello Mr Ahmed
 
-print(member_one.get_all_info())
+print(member_one.get_all_info())   # Hello Mr khaled, Your Full Name Is: khaled kamr rashad

@@ -78,11 +78,11 @@ member_two = Member("Ahmed", "Ali", "Mahmoud", "Male")
 member_three = Member("Mona", "Ali", "Mahmoud", "Female")
 #member_four = Member("Shit", "Hell", "Metal", "DD")
 
-Member.show_users_count()
+Member.show_users_count()   # We Have 3 Users In Our System.
 
 print("=" * 50)
 
-print(member_one.full_name())
-print(Member.full_name(member_one))
+print(member_one.full_name())  # Osama Mohamed Elsayed
+print(Member.full_name(member_one))  # Osama Mohamed Elsayed
 
-Member.say_hello()
+Member.say_hello()  # Hello From Static Method

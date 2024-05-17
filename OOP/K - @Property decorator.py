@@ -19,5 +19,5 @@ class member:
         return self.age * 365
     
 one = member("khaled", 20)
-print(one.say_hello())
-print(one.ageInDays) # we didn't include "()" cuz it's not a method anymore
+print(one.say_hello())   # Hello, khaled
+print(one.ageInDays)     # 7300

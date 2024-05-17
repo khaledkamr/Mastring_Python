@@ -31,6 +31,6 @@ class Pascal(programmig):
         return "no"
     
 one = python()
-print(one.hasOOP())
+print(one.hasOOP())   # yes
 two = Pascal()
-print(two.hasOOP())
+print(two.hasOOP())   # no

@@ -36,3 +36,9 @@ member_three = Member()  #instance
 
 print(member_one.__class__)
 
+'''
+A New Member Has Been Added
+A New Member Has Been Added
+A New Member Has Been Added
+<class '__main__.Member'>
+'''

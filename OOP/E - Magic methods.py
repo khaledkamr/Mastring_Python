@@ -24,18 +24,18 @@ class Skill:
     return len(self.skills)
 
 profile = Skill()
-print(profile)
-print(len(profile))
+print(profile)       # This is My Skills => ['Html', 'Css', 'Js']
+print(len(profile))  # 3
 
 profile.skills.append("PHP")
 profile.skills.append("MySQL")
 
-print(len(profile))
+print(len(profile))  # 5
 
-print(profile.__class__)
+print(profile.__class__)  # <class '__main__.Skill'>
 
 my_string = "Osama"
-print(type(my_string))
-print(my_string.__class__)
+print(type(my_string))     # <class 'str'>
+print(my_string.__class__) # <class 'str'>
 print(dir(str))
-print(str.upper(my_string))
+print(str.upper(my_string)) # OSAMA

@@ -25,8 +25,8 @@ class apple(Food): # derived class
 
 
 #food1 = Food("pizza")
-food2 = apple("pizza")
-food2.eat()
+food2 = apple("pizza")    # pizza is created from derived class
+food2.eat()    # eat method from base class
 print("=" * 50)
 
 # when you add a constructor to the dreiven class, you over write on the constructor of thebase class
@@ -64,6 +64,12 @@ class apple(Food): # derived class
 
 
 #food1 = Food("pizza")
-food2 = apple("pizza", 150, 500)
+food2 = apple("pizza", 150, 500)  # pizza is created from main class
 food2.eat() 
+'''
+pizza is created from derived class
+Price is 150
+Amount is 500
+eat method from base class
+'''
 

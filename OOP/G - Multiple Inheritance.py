@@ -26,9 +26,9 @@ class derived(base1, base2):
 
     pass
 
-var = derived()
-var.fun1() 
-var.fun2()
+var = derived()     # base1
+var.fun1()          # one
+var.fun2()          # two
 
 
 

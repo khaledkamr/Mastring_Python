@@ -25,9 +25,9 @@ class member:
         self.name = name #public
 
 one = member("Khaled")
-print(one.name)
+print(one.name)    # Khaled
 one.name = "yossif"
-print(one.name) 
+print(one.name)    # yossif
 
 print("=" * 50)
 
@@ -44,9 +44,9 @@ one = member("Khaled")
 # but unfortunately we can
 # Python use "_" just as a note for the coder to not use it out the class
 
-print(one._name)
+print(one._name)     # Khaled
 one._name = "yossif" # and you can change it to
-print(one._name)
+print(one._name)     # yossif
 
 print("=" * 50)
 
@@ -62,12 +62,12 @@ class member:
         print(f"Hello, {self.__name}")
 
 one = member("Khaled")
-one.hello()
+one.hello()  # Hello, Khaled
 #print(one.__name) # AttributeError: 'member' object has no attribute '__name'
 
 # But unfortunatuly you still can access the private attribute
 # Python use "__" just as a note for the coder to not use it out the class
 
-print(one._member__name)
+print(one._member__name)  # Khaled
 
 

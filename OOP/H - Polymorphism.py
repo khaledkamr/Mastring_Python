@@ -27,6 +27,6 @@ class C(A):
 ins = A()
 #ins.do()
 ins = B()
-ins.do()
+ins.do()  # from class B
 ins = C()
-ins.do()
+ins.do()  # from class C
