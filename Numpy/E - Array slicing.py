@@ -8,11 +8,11 @@ import numpy as np
 
 a = np.array(["A", "B", "C", "D", "E", "F"])
 
-print(a.ndim)
-print(a[1])
-print(a[1:4])
-print(a[:4])
-print(a[2:])
+print(a.ndim)    # 1
+print(a[1])      # B
+print(a[1:4])    # ['B' 'C' 'D']
+print(a[:4])     # ['A' 'B' 'C' 'D']
+print(a[2:])     # ['C' 'D' 'E' 'F']
 
 print("#" * 50)
 
@@ -21,8 +21,20 @@ b = np.array([["A", "B", "X"],
               ["E", "F", "Z"], 
               ["M", "N", "O"]])
 
-print(b.ndim)
-print(b[1])
+print(b.ndim)    # 2
+print(b[1])      # ['C' 'D' 'Y']
 print(b[2:][:2])
+'''
+[['E' 'F' 'Z']
+ ['M' 'N' 'O']]
+'''
 print(b[2:, :2])
+'''
+[['E' 'F']
+ ['M' 'N']]
+'''
 print(b[2:, :2:2]) # two steps
+'''
+[['E']
+ ['M']]
+'''
