@@ -2,16 +2,6 @@
 
 Welcome to the **Mastering Python** repository! This repository is designed to help you learn and master the basics of Python programming, Object-Oriented Programming (OOP), file handling, databases, and includes some mini-projects to practice your skills.
 
-## Table of Contents
-
-- [Contents](#contents)
-  - [Basics](#basics)
-  - [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
-  - [File Handling](#file-handling)
-  - [Databases (SQLite)](#databases-sqlite)
-  - [Advanced Lessons](#advanced-lessons)
-  - [Projects](#projects)
-
 # Contents
 
 ## Basics
