@@ -21,7 +21,8 @@ Explore advanced Python topics and techniques to enhance your programming skills
 
 ## Projects
 Practice your Python skills with mini-projects that apply the concepts learned in the previous sections.
-Also contains solution of tasks of free code camp.
+
+Also contains solution of tasks of free code camp's Scientific Computing with Python.
 
 # Resources
 + [Real Python](https://realpython.com/)
