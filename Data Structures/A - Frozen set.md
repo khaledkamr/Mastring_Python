@@ -6,7 +6,6 @@ of a set can be modified at any time, but elements of the frozen set
 remain the same after creation.
 If no parameters are passed, it returns an empty frozenset.
 
-
 # frozenset()
 Python Method creates an immutable Set object from an iterable. 
 It is a built-in Python function. As it is a set object, therefore, 
