@@ -121,12 +121,12 @@ True
 ```
 ## Greater Than Or Equal + Less Than Or Equal
 ```python []
-print(100 >= 100)      # True
-print(100 >= 40)       # True
+print(100 >= 100)      
+print(100 >= 40)       
 
-print(100 <= 100)      # True
-print(100 <= 200)      # True
-print(100 <= 40)       # False
+print(100 <= 100)      
+print(100 <= 200)      
+print(100 <= 40)       
 ```
 #### Output
 ```
