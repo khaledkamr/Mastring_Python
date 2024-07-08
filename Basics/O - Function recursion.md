@@ -1,21 +1,14 @@
-# ------------------------
-# -- Function Recursion --
-# ------------------------
-# ---------------------------------------------------------------------
-# -- To Understand Recursion, You Need First to Understand Recursion --
-# ---------------------------------------------------------------------
+# Function Recursion 
+### To Understand Recursion, You Need First to Understand Recursion 
 
-# function to delete the repeated letters
-
+## function to delete the repeated letters:
+```python []
 def cleanWord(word):
-
   if (len(word) == 1):
     return word
 
   if (word[0] == word[1]):
-
     print(f"Print Before Condition: {word}") # for trace
-
     return cleanWord(word[1:])
 
   print(f"Print Before Return: {word}") # for trace
@@ -24,8 +17,9 @@ def cleanWord(word):
 
 
 print(cleanWord("WWWoooorrrldd"))
-
-'''
+```
+#### Output
+```
 Print Before Condition: WWWoooorrrldd
 Print Before Condition: WWoooorrrldd
 Print Before Return: Woooorrrldd
@@ -39,4 +33,4 @@ Print Before Return: rldd
 Print Before Return: ldd
 Print Before Condition: dd
 World
-'''
+```
