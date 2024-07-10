@@ -1,12 +1,9 @@
-# --------------------------------------------------------
-# -- Advanced_Lessons => Generate Random Serial Numbers --
-# --------------------------------------------------------
-
+# Advanced_Lessons => Generate Random Serial Numbers 
+```python []
 import string
 import random
 
 def generateSerial(count):
-
     allChar = string.ascii_letters + string.digits
     charCount = len(allChar)
     serial = ""
@@ -20,3 +17,15 @@ def generateSerial(count):
     return serial
 
 print(generateSerial(10))
+```
+#### Output
+```
+dCUKmeJzus
+```
+```
+hzHBvmQ2vQ
+```
+```
+W56zGE4nwV
+```
+### Every time it will generate different serial number
