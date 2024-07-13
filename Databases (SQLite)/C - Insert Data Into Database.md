@@ -1,10 +1,7 @@
-# ------------------------------------------------------
-# -- Databases => SQLite => Insert Data Into Database --
-# ------------------------------------------------------
-# - cursor => All Operation in SQL Done By Cursor Not The Connection Itself
-# - commit => Save All Changes
-# ------------------------------------------------------
-
+# Databases => SQLite => Insert Data Into Database 
+- cursor => All Operation in SQL Done By Cursor Not The Connection Itself
+- commit => Save All Changes
+```python []
 # Import SQLite Module
 import sqlite3
 
@@ -24,9 +21,7 @@ cr.execute("insert into users(user_id, name) values(2, 'yossif')")
 cr.execute("insert into users(user_id, name) values(3, 'yassen')")
 
 users = ["ahmed", "ali", "abdo", "tark", "ibrahim", "khaled"]
-
 for key, user in enumerate(users):
-
     cr.execute(f"insert into users(user_id, name) values({key + 1}, '{user}')")
 
 # Save (Commit) Changes
@@ -34,3 +29,4 @@ db.commit()
 
 # Close Database
 db.close()
+```
