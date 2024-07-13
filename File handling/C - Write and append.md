@@ -1,7 +1,5 @@
-# -----------------------------------------------
-# -- File Handling => Write and Append In File --
-# -----------------------------------------------
-
+# File Handling => Write and Append In File
+```python []
 myfile = open("D:\khaled.txt", "w")
 
 # the write mode overwrite the file
@@ -20,3 +18,4 @@ myfile = open("D:\khaled.txt", "a")
 myfile.write("hello from append")
 
 myfile.close()
+```
