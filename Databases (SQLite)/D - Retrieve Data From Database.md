@@ -1,12 +1,10 @@
-# --------------------------------------------------------
-# -- Databases => SQLite => Retrieve Data From Database --
-# --------------------------------------------------------
-# - fetchone => returns a single record or None if no more rows are available.
-# - fetchall => fetches all the rows of a query result. It returns all the rows
-#               as a list of tuples. An empty list is returned if there is no record to fetch.
-# - fetchmany(size) => returns a number of record = size or None if no more rows are available.
-# ------------------------------------------------------
-
+# Databases => SQLite => Retrieve Data From Database
+- fetchone => returns a single record or None if no more rows are available.
+- fetchall => 
+    - fetches all the rows of a query result. It returns all the rows
+    - as a list of tuples. An empty list is returned if there is no record to fetch.
+- fetchmany(size) => returns a number of record = size or None if no more rows are available.
+```python []
 # Import SQLite Module
 import sqlite3
 
@@ -21,11 +19,8 @@ cr.execute("CREATE TABLE if not exists users (user_id INTEGER, name TEXT)")
 cr.execute("CREATE TABLE if not exists skills (name TEXT, progress INTEGER, user_id INTEGER)")
 
 # Inserting Data
-
 users = ["ahmed", "ali", "abdo", "tark", "ibrahim", "khaled"]
-
 for key, user in enumerate(users):
-
     cr.execute(f"insert into users(user_id, name) values({key + 1}, '{user}')")
 
 # Fetch Data
@@ -42,3 +37,14 @@ db.commit()
 
 # Close Database
 db.close()
+```
+#### Output
+```
+(1, 'ahmed')
+(2, 'ali')
+==================================================
+[(3, 'abdo'), (4, 'tark')]
+==================================================
+[(5, 'ibrahim'), (6, 'khaled')]
+
+```
