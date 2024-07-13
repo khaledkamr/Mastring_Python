@@ -1,7 +1,5 @@
-# ---------------------------------------------------
-# -- Databases => SQLite => Training On Everything --
-# ---------------------------------------------------
-
+# Databases => SQLite => Training On Everything 
+```python []
 import sqlite3
 
 def getAllData():
@@ -34,8 +32,20 @@ def getAllData():
             # close database connection
             db.close()
             print("connection to database is closed")
-        
-
-
+    
 
 getAllData()
+```
+#### Output
+```
+connected to database successfully
+database has 6 rows
+showing data:
+UserID: 1  Username: ahmed
+UserID: 2  Username: ali
+UserID: 3  Username: abdo
+UserID: 4  Username: tark
+UserID: 5  Username: ibrahim
+UserID: 6  Username: khaled
+connection to database is closed
+```
