@@ -1,7 +1,5 @@
-# ---------------------------------------------
-# -- Database => SQLite => Update and Delete --
-# ---------------------------------------------
-
+# Database => SQLite => Update and Delete
+```python []
 import sqlite3
 
 db = sqlite3.connect("app.db")
@@ -22,3 +20,10 @@ print(cr.fetchone())
 
 db.commit()
 db.close()
+```
+#### Output
+```
+(1, 'khaled')
+(2, 'ahmed')
+(4, 'tark')
+```
