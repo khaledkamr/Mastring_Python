@@ -32,3 +32,14 @@ myLogger.warning("this is warning msg")
 myLogger.error("this is eror msg")
 myLogger.critical("this is critical msg")
 ```
+#### myApp.log
+```
+(10 Jul 2024, 13:41:41) | root | WARNING -> 'this is warning msg'
+(10 Jul 2024, 13:41:41) | khaled | WARNING -> 'this is warning msg'
+(10 Jul 2024, 13:41:41) | khaled | ERROR -> 'this is eror msg'
+(10 Jul 2024, 13:41:41) | khaled | CRITICAL -> 'this is critical msg'
+(10 Jul 2024, 13:42:15) | root | WARNING -> 'this is warning msg'
+(10 Jul 2024, 13:42:15) | khaled | WARNING -> 'this is warning msg'
+(10 Jul 2024, 13:42:15) | khaled | ERROR -> 'this is erorr msg'
+(10 Jul 2024, 13:42:15) | khaled | CRITICAL -> 'this is critical msg'
+```
