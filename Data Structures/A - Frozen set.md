@@ -27,7 +27,7 @@ animals = frozenset(["cat", "dog", "lion"])
 print("cat" in animals) 
 print("elephant" in animals)  
 ```
-### Output
+#### Output
 ```
 True
 False
@@ -40,7 +40,7 @@ print(fruits)
 fruits.append("peach")
 print(fruits) 
 ```
-### Output
+#### Output
 ```
 frozenset({'banana', 'orange', 'apple'})
 
@@ -57,7 +57,7 @@ f_subject = frozenset(favourite_subject)
 # below line will generate error
 f_subject[1] = "Networking"
 ```
-### Output 
+#### Output 
 ```
 TypeError: 'frozenset' object does not support item assignment
 ```
@@ -88,7 +88,7 @@ print(difference_set)
 symmetric_difference_set = A.symmetric_difference(B)
 print(symmetric_difference_set)  
 ```
-### Output 
+#### Output 
 ```
 frozenset({1, 2, 3, 4})
 frozenset({1, 2, 3, 4, 5, 6})
@@ -106,7 +106,7 @@ frozen_set = frozenset([1, 2, 3, 4, 5])
 my_set = set(frozen_set)  # Convert frozenset back to a set
 print(my_set) 
 ```
-### Output
+#### Output
 ```
 {1, 2, 3, 4, 5}
 ```
