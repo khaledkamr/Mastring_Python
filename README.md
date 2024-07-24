@@ -7,6 +7,9 @@ Welcome to the **Mastering Python** repository! This repository is designed to h
 ## Basics
 This section covers the fundamentals of Python programming, including syntax, variables, data types, control structures, functions, and more.
 
+## Data Structures
+Learn about essential data structures in Python, such as stack, queue, tree, and linked list. This section covers their usage, methods, and best practices.
+
 ## Object-Oriented Programming (OOP)
 Learn the principles of OOP, including classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
 
