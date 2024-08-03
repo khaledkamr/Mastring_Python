@@ -213,7 +213,7 @@ For each node, first, the node is visited and then its child nodes are put in a 
     - print temp_node->data.
     - Enqueue temp_node’s children (first left then right children) to q
     - Dequeue a node from q
-    
+
 ```python
 # Python program to print level
 # order traversal using Queue
@@ -273,3 +273,4 @@ Level Order Traversal of binary tree is -
 4
 5
 ```
+Time Complexity: O(n)
